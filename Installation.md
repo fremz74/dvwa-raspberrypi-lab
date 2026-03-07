@@ -38,6 +38,7 @@ Configure DVWA
 Edit the configuration file:
 cd /var/www/html/DVWA/config
 sudo nano config.inc.php
+sudo cp /var/www/html/DVWA/config/config.inc.php.dist /var/www/html/DVWA/config/config.inc.php
 
 Check the database configuration
 $_DVWA['db_user'] = 'dvwa';
