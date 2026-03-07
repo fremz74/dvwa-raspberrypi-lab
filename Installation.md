@@ -6,7 +6,7 @@ Using Raspberry Pi Imager:
 
 - OS: Raspberry Pi OS (32-bit)
 - Hostname: dvwa-pi
-- Username: wally
+- Username: user
 - Enable SSH
 - Configure Wi-Fi (SSID and password)
 
