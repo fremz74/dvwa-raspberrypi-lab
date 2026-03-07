@@ -15,7 +15,7 @@ Write the image to the SD card and boot the Raspberry Pi.
 Connect to the Raspberry Pi using SSH:
 
 ```bash
-ssh wally@<raspberry-ip>
+ssh user@<raspberry-ip>
 
 Update the system
 sudo apt update && sudo apt upgrade -y
