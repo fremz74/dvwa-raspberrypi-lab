@@ -21,8 +21,7 @@ See the full installation guide:
 ## Access DVWA
 
 After installation, access DVWA at:
-
-http://<raspberry-ip>/DVWA
+`http://<raspberry-ip>/DVWA`
 
 Default credentials:
 
