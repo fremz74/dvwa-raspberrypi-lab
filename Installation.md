@@ -22,9 +22,14 @@ sudo apt update && sudo apt upgrade -y
 
 Install dependencies (LAMP stack)
 sudo apt install apache2 mariadb-server php php-mysqli php-gd libapache2-mod-php git -y
+sudo apt install php-mbstring -y
 
 Restart Apache:
 sudo systemctl restart apache2
+Check if errors
+sudo systemctl status mariadb
+sudo systemctl start mariadb
+
 
 Download DVWA
 cd /var/www/html
