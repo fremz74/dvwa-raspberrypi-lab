@@ -37,13 +37,13 @@ sudo chmod -R 755 /var/www/html/DVWA
 Configure DVWA
 Edit the configuration file:
 cd /var/www/html/DVWA/config
-sudo nano config.inc.php
-sudo cp /var/www/html/DVWA/config/config.inc.php.dist /var/www/html/DVWA/config/config.inc.php
-
-Check the database configuration
-$_DVWA['db_user'] = 'dvwa';
-$_DVWA['db_password'] = 'password';
-Modify it if necessary.
+sudo cp config.inc.php.dist config.inc.php
+sudo mysql
+CREATE DATABASE dvwa;
+CREATE USER 'dvwa'@'localhost' IDENTIFIED BY 'p@ssw0rd';
+GRANT ALL PRIVILEGES ON dvwa.* TO 'dvwa'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
 
 Initialize DVWA
 Open your browser and go to:
