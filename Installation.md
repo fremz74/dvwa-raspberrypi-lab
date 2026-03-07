@@ -63,6 +63,11 @@ http://<raspberry-ip>/DVWA/
 Default credentials:
 admin / password
 
+After a reboot of the RaspberryPi
+sudo systemctl enable apache2
+sudo systemctl enable mariadb
+(prevent 500 Internal Server Error - HTTP)
+
 SECURITY NOTES
 DVWA is intentionally vulnerable.
 Use it only in an isolated lab environment.
