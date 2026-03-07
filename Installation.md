@@ -63,10 +63,15 @@ http://<raspberry-ip>/DVWA/
 Default credentials:
 admin / password
 
-After a reboot of the RaspberryPi
+Enable services at boot
 sudo systemctl enable apache2
 sudo systemctl enable mariadb
-(prevent 500 Internal Server Error - HTTP)
+Ensures Apache and MariaDB start automatically after reboot.
+
+Check services status
+sudo systemctl status apache2
+sudo systemctl status mariadb
+
 
 SECURITY NOTES
 DVWA is intentionally vulnerable.
